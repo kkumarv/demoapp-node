@@ -1,0 +1,44 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "lib": [
+            "es6"
+        ],
+        "baseUrl": ".",
+        "paths": {
+            "config/*": [
+                "conf/*"
+            ],
+            "components/*": [
+                "./components/*"
+            ],
+            "db/*": [
+                "./db/*"
+            ],
+            "lib/*": [
+                "./lib/*"
+            ],
+            "services/*": [
+                "./services/*"
+            ],
+            "utils/*": [
+                "./utils/*"
+            ]
+        }
+    },
+    "exclude": [
+        "node_modules",
+        "**/node_modules/*",
+        "docs",
+        "**/docs/*"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "compileOnSave": true,
+    "experimentalDecorators": true,
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}
